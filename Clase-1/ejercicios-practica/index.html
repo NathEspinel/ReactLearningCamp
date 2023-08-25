@@ -10,9 +10,22 @@
 <body>
   <!--El proposito de esta página web es poner en practica la mayor cantidad de etiquetas y atributos para estructurar un sitio web básico pero bien estructurado, además de contar con buenas practicas de codificación.-->
 
-  <h1>Bienvenidos a mi página web</h1>
+  <header>
+    <h1>Bienvenidos a mi página web</h1>
+    <h2>vida / habitos / gustos</h2>
+  </header>
+
+  <nav>
+    <ul>
+      <a href="index.html">Home</a>&ensp;
+      <a href="pasatiempos.html">Pasatiempos</a>&ensp;
+      <a href="familia-amigos.html">Circulo social</a>&ensp;
+      <a href="formulario.html">Formulario</a>&ensp;
+    </ul>
+  </nav>
+
   <div>
-    <h2>Enlaces internos</h2>
+    <h3>Enlaces internos</h3>
     <!--Los hice con el id ya que lo requiere el ejercicio, in embargo al ser una página de poco contenido, solo es notoria la funcionalidad del enlace en formulario ya que es la ultima sección de la página web-->
     <a href="#pasatiempos">Acesso a pasatiempos</a><br>
     <a href="#familiares">Información de familiares y amigos</a><br>
@@ -27,19 +40,19 @@
   </main>
 
   <div id="enlaces">
-    <h2>Enlaces de interes</h2>
+    <h3>Enlaces de interes</h3>
     <a href="https://www.wikipedia.org/" target="_blank" title="Acceso a la página principal de Wikipedia.">Visita
       wikipedia</a>
   </div>
 
 
   <div id="imagenes">
-    <h2>Imágenes</h2>
+    <h3>Imágenes</h3>
     <img src="Rootstrap.png" alt="Imagen del logotipo de Rootstrap">
   </div>
 
   <div id="pasatiempos">
-    <h2>Mis pasatiempos favoritos</h2>
+    <h3>Mis pasatiempos favoritos</h3>
     <ul>
       <li>Hacer ejercicio</li>
       <li>Cocinar</li>
@@ -52,7 +65,7 @@
   </div>
 
   <div id="familiares">
-    <h2>Información de familiares y amigos</h2>
+    <h3>Información de familiares y amigos</h3>
     <table>
       <tr>
         <th>Nombre</th>
@@ -98,7 +111,7 @@
   </div>
 
   <div id="formulario">
-    <h2>Formulario</h2>
+    <h3>Formulario</h3>
     <form>
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre"><br><br> <!--Cual es la diferencia entre id y nombre?-->
@@ -108,6 +121,14 @@
     </form>
   </div>
 
+  <footer>
+    <h3>Contactame</h3>
+    <p>Teléfono: 123-456-7890</p>
+    <p>Correo: kellynathalia0306@gmail.com</p>
+    <a href="https://www.linkedin.com/in/kelly-nathalia-garcia-espinel-03b54117a" target="_blank"
+      title="Acceso a perfil de LinkedIn">Perfil de LinkedIn</a>
+    <p>Bogotá, Colombia</p>
+  </footer>
 </body>
 
 </html>
