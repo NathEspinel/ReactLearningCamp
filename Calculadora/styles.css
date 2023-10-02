@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#globalContainer{
+  background-color: powderblue;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+
+#screenOperation{
+  margin: 15px 10px 0px 10px ;
+  padding: 15px;
+  background-color: aliceblue;
+  
+}
+
+#screenResult{
+  margin: 0px 10px 15px 10px;
+  padding: 10px;
+  background-color: aliceblue;
+  text-align: right;
+  font-size: x-large;
+}
+
+#buttonsContainer{
+  margin: 0px 10px 10px 10px; 
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%
+}
+
+footer{
+  text-align: right;
+}
