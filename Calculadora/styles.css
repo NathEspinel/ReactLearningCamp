@@ -58,6 +58,9 @@ button {
   font-size: 18px;
   border-radius: 15px;
   background-color: rgb(155, 180, 191);
+  border-color: rgb(155, 186, 199);
+  color: rgb(77, 73, 70);
+  
 }
 
 #name{
@@ -66,9 +69,17 @@ button {
   padding-bottom: 5px;  
 }
 
+#name a{
+  color: black;
+  text-decoration: none;
+  font-style: italic;
+}
+
 #equal{
   grid-column: span 2;
-  background-color: rgb(65, 119, 181);
-  border-color:rgb(26, 50, 78) ;
+  background-color: rgb(250, 137, 56);
+  border-color:rgb(241, 147, 80);
+  color: white;
 }
+
 
