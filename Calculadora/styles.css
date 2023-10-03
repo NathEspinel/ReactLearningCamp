@@ -1,21 +1,51 @@
+@font-face {
+  font-family: "DS Digital Font";
+  src: url(fonts/DS-DIGIB.TTF);
+};
+
+/*Siempre iniciar el CSS asi (etiqueta *)*/
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box;/*Usarlo de ahora en adelante, ya que es la forma más intuitiva y eficiente de trabajar el diseño web. Tamaño total del elemento:(contenido + padding + border) es constante. Los cambios en el relleno y el borde no afectan el tamaño del contenido*/
 }
 
-#globalContainer{
-  background-color: powderblue;
-  position: absolute;
-  top: 50%;
-  left: 40%;
+body{
+  background-color: rgb(74, 71, 71);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
 }
 
+
+#calculator{
+  background-color: rgb(88, 197, 212);
+  max-width: 550px;/*es el ancho máximo que manejara el div contenedor de toda la calculadora*/
+  margin: 50px auto;/*margin superior de 50px y el auto lo que hace es centrar*/
+  padding: 35px 35px 0px 35px;/*va en sentido de las manecillas del reloj donde el primer valor es el lado superior*/
+  border-radius: 10px;
+  box-shadow: 10px 5px rgb(50, 148, 161);
+}
+
+.screen{
+  background-color:#dfdada ;
+  width: 100%;
+  padding: 5px;
+  text-align: right;
+  font-family: "DS Digital Font";
+  
+}
 #screenOperation{
+  font-size: x-large; 
+}
+#screenResult{
+  font-size:xx-large;
+
+}
+
+/*#screenOperation{
   margin: 15px 10px 0px 10px ;
   padding: 15px;
   background-color: aliceblue;
-  
+  height: 20%;
 }
 
 #screenResult{
@@ -28,11 +58,20 @@
 
 #buttonsContainer{
   margin: 0px 10px 10px 10px; 
+  height: 60%;
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 20% 20% 20% 20% 20%
+
+}
+
+button{
+  margin: 1.5px;
+  padding: 2px;
+  text-align: center;
 }
 
 footer{
   text-align: right;
-}
+  background-color: powderblue;
+}*/
