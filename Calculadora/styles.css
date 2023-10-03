@@ -33,45 +33,42 @@ body{
   font-family: "DS Digital Font";
   
 }
+
 #screenOperation{
-  font-size: x-large; 
-}
-#screenResult{
-  font-size:xx-large;
-
-}
-
-/*#screenOperation{
-  margin: 15px 10px 0px 10px ;
-  padding: 15px;
-  background-color: aliceblue;
-  height: 20%;
+  font-size: 40px; 
+  border-radius: 10px 10px 0px 0px;
 }
 
 #screenResult{
-  margin: 0px 10px 15px 10px;
-  padding: 10px;
-  background-color: aliceblue;
-  text-align: right;
-  font-size: x-large;
+  font-size:70px;
+  border-radius: 0px 0px 10px 10px  
 }
 
 #buttonsContainer{
-  margin: 0px 10px 10px 10px; 
-  height: 60%;
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 20% 20% 20% 20% 20%
-
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 3px;
+  margin: 10px 0px;
 }
 
-button{
-  margin: 1.5px;
-  padding: 2px;
-  text-align: center;
+button {
+  padding: 5px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+  border-radius: 15px;
+  background-color: rgb(155, 180, 191);
 }
 
-footer{
+#name{
   text-align: right;
-  background-color: powderblue;
-}*/
+  font-size: small;
+  padding-bottom: 5px;  
+}
+
+#equal{
+  grid-column: span 2;
+  background-color: rgb(65, 119, 181);
+  border-color:rgb(26, 50, 78) ;
+}
+
