@@ -1,12 +1,11 @@
 
-/*Línea encargada de permitir que la llamada al script este en el head del HTML y que funcione sin arrojar ningún error, ya que lo ejecuta hasta que todo lo de HTML se haya ejecutado y exista, y por lo tanto ya se puede aplicar la funcionalidad de js sin inconvenientes.*/
 window.addEventListener("load", () =>{
 
-  const screen = document.querySelector("#screen");//llamar al elemento de HTML
-  const buttons = document.querySelectorAll(".btn");//llamar a TODOS los elementos de esa clase, querySelectorAll genera un array, por lo que se puede manipular con los metodos de array
+  const screen = document.querySelector("#screen");
+  const buttons = document.querySelectorAll(".btn");
   let lastResult;
 
-  /*Con el empleo de forEach agregar un addEventListener para cada boton del arreglo que se genero con el querySelectorAll */
+
   buttons.forEach(button => {
     button.addEventListener("click",() => {
       let buttonPressed = button.textContent;
