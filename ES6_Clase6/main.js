@@ -1,4 +1,4 @@
-import {saludar} from "./utils.js";
+import {promise1} from "./utils.js";
 
 //Ejercicio 1
 const personName = "Kelly Nathalia Garcia Espinel";
@@ -70,4 +70,16 @@ const studentMatias = new Student(matias.name, matias.age, matias.curso);
 console.log(`Mi nombre es ${matias.name}, tengo ${matias.age} años y estoy en el curso de ${matias.curso}.`);
 
 //Ejercicio 11
-console.log(saludar());
+console.log(promise1(10));
+
+//Ejercicio 12 
+async function usePromise1() {
+  try {
+    const promiseUse = await promise1();
+    console.log(promiseUse);
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+usePromise1(10);
