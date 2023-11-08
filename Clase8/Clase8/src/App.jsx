@@ -1,17 +1,16 @@
 import { PetCard } from "./components/PetCard/PetCard"
-
+import './index.css'
 const pets = [
-  {name : "Hachi", age:"10", kind:"Dog", breed:"Shih Tzu", isAdopted:true},
-  {name : "Hachi1", age:"1", kind:"Dog", breed:"Shih Tzu", isAdopted:true},
-  {name : "Hachi2", age:"100", kind:"Dog", breed:"Shih Tzu", isAdopted:false},
-  {name : "Hachi3", age:"102", kind:"Dog", breed:"Shih Tzu", isAdopted:true},
-  {name : "Hachi4", age:"120", kind:"Dog", breed:"Shih Tzu", isAdopted:true}
+  {name : "Hachi", age:"10", kind:"Dog", breed:"Shih Tzu", isAdopted:false},
+  {name : "Felix", age:"8", kind:"Cat", breed:"Black", isAdopted:true},
+  {name : "Cody", age:"13", kind:"Dog", breed:"Beagle", isAdopted:false},
+  {name : "Molly", age:"11", kind:"Dog", breed:"Black", isAdopted:true},
+  {name : "Orion", age:"2", kind:"Cat", breed:"Persa", isAdopted:true}
 ]
 export const App = () => {
   return (
     <>  
       <h1>My Pet App</h1>
-      <PetCard {...pets[2]}/>
       {pets.map(pet => <PetCard {...pet} />)}
     </>
   )
