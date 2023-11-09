@@ -1,4 +1,5 @@
-import { PetCard } from "./components/PetCard/PetCard"
+import { useState } from 'react'
+import {PetCard} from './components'
 import './index.css'
 const pets = [
   {name : "Hachi", age:"10", kind:"Dog", breed:"Shih Tzu", isAdopted:false},
