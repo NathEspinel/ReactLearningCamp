@@ -1,26 +1,12 @@
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import './App.css'
+import { DataContext } from './contexts/DataContext';
 
 function App() {
-  const [product, setProduct] = useState(null);
 
-  const fetchData = async () =>{
-    try {
-      const response = await fetch("https://fakestoreapi.com/products");
-      const data = await response.json();
-      setProduct(data);
-    } catch (error){
-      console.log(error);
-    }
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-  
-  console.log("mi componente se esta renderizando");
-
+  const callingDataContext = useContext(DataContext);
+  console.log(callingDataContext);
   return (
     <>
       <h1>Mi primer fetching de datos</h1>
