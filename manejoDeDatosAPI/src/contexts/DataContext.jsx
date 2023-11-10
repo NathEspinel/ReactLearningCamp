@@ -3,18 +3,13 @@ import { createContext, useEffect, useState } from "react";
 export const DataContext = createContext();
 
 export function ApiProvider({children}){
-  const [apiData, setApiData] = useState(null);
+  const [apiData, setApiData] = useState([]);
 
   useEffect(() => {
-    const fetchData = async () =>{
-      try {
-        const response = await fetch("https://fakestoreapi.com/products");
-        const data = await response.json();
-        setProduct(data);
-      } catch (error){
-        console.log(error);
-      }
-    };
+    fetch ("https://api.escuelajs.co/api/v1/products")
+    .then((response) => response.json())
+    .then((data) => setApiData(data))
+    .catch((error) => console.error("Error en el llamado de la base de datos:", error));    
   } , []);
 
   console.log("mi componente se esta renderizando");
